@@ -1,6 +1,8 @@
+package src;
+
 public class Arithmetic {
-    int varA = 0;
-    int varB = 0;
+    int varA;
+    int varB;
 
     public Arithmetic (int A, int B) {
         varA = A;

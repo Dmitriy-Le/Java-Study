@@ -1,7 +1,9 @@
+package src;
+
 public class Basket {
 
     private static int count = 0;
-    private String items = "";
+    private String items;
     private int totalPrice = 0;
     private int limit;
 
@@ -35,10 +37,7 @@ public class Basket {
     }
 
     public void add(String name, int price, int count) {
-        boolean error = false;
-        if (contains(name)) {
-            error = true;
-        }
+        boolean error = contains(name);
 
         if (totalPrice + count * price >= limit) {
             error = true;
