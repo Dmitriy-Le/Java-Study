@@ -4,9 +4,9 @@ public class Arithmetic {
     int varA;
     int varB;
 
-    public Arithmetic (int A, int B) {
-        varA = A;
-        varB = B;
+    public Arithmetic(int varA, int varB) {
+        this.varA = varA;
+        this.varB = varB;
     }
 
     public int sum () {
